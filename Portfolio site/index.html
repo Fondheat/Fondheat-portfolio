@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FONDHEAT PORTFOLIO</title>
+    <meta name="description" content="a portfolio for a professional video editor">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="png" href="senkufavicon.jpg">
+</head>
+<body>
+  <!-- SECTION 1-->
+  <header class="hero" id="headbanner">
+    <!-- THE THEME TOGGLE BUTTON -->
+    <button id="theme-toggle" class="theme-toggle">☀️ Day Mode</button>
+
+    <div class="hero-content">
+      <h1>Fondheat</h1>
+      <h2>Mid Level Davinci Resolve Video Editor</h2>
+      <p>
+        I am a mid level long-form history documentary editor, whos also good at 
+        aggressive, fast-paced transitions for viral social media content, good with schedules, and I understand a wide range of Youtube content, let me bring your stories to life using the unmatched power of DaVinci Resolve.
+      </p>
+      
+      <a href="https://t.me/fondheat1" target="_blank" class="btn-primary">Let's Work Together</a>
+    </div>
+  </header>
+
+  <!--Featured projects-->
+  <main>
+    <section id="work" class="portfolio">
+      <h2>Featured Projects</h2>
+      <h4>Videos I have previously worked on</h4>
+      <hr>
+      <br>
+      <div class="video-grid">
+        <!-- Project 1 -->
+        <article class="video-card">
+          <iframe width="100%" height="250" src="https://www.youtube.com/embed/yXH7sqnNLBs?si=7tT81E01_kKxlbDS" title="Long Form History Documentary Edit" frameborder="0" allowfullscreen></iframe>
+          <h3>WW1 Documentary</h3>
+          <p>Long Form Documentary</p>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="video-card">
+          <iframe width="100%" height="250" src="https://www.youtube.com/embed/7BukViwNRA0" title="High-Energy Reels" frameborder="0" allowfullscreen></iframe>
+          <h3>Copyright Free Football Review </h3>
+          <p>Football Documentary</p>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="video-card">
+          <iframe width="100%" height="250" src="https://www.tiktok.com/embed/v2/7611779078005198096" title="Short Form High Retention Documentary style" frameborder="0" allowfullscreen></iframe>
+          <h3>Short Form Retention Documentary</h3>
+          <p>Documentary-style.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!--CONTACT & SOCIALS (Footer) -->
+  <footer id="contact" class="contact-section">
+    <h2>Ready to elevate your next project?</h2>
+    
+    <div class="contact-links">
+      <!-- Email -->
+      <a href="mailto:samuel40277@gmail.com" class="email-link" target="_blank">👉🏻EMAIL ME👈🏻</a>
+      
+      <!-- Socials -->
+      <div class="socials">
+        <a href="https://youtube.com/@fondheat?si=AqhIOl3IEZsvwZH4" target="_blank">YouTube</a>
+        <a href="https://www.tiktok.com/@samuel_84686?is_from_webapp=1&sender_device=pc" target="_blank">TikTok</a>
+      </div>
+    </div>
+    
+    <p>&copy; Fondheat [Iwehiuan Samuel] 2026. All rights reserved.</p>
+  </footer>
+  <script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    themeToggleBtn.addEventListener('click', () => {
+      body.classList.toggle('light-mode');
+      
+      if (body.classList.contains('light-mode')) {
+        themeToggleBtn.innerText = '🌙 Night Mode';
+      } else {
+        themeToggleBtn.innerText = '☀️ Day Mode';
+      }
+    });
+  </script>
+</body>
+</html>
